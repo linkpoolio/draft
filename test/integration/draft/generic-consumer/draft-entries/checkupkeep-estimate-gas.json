@@ -1,0 +1,30 @@
+[
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 1,
+      "jobName": "Test job 1",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243a",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "100000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "address", "value": "0x896E90716f673E0003452f700A0ba44bBFc49c79", "type": "string" },
+        { "name": "countryCodes", "value": "PT-ES-FR-IT-US", "type": "string" },
+        { "name": "days", "value": 7, "type": "uint" },
+        { "name": "endpoint", "value": "contains-most-visited-location", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  }
+]

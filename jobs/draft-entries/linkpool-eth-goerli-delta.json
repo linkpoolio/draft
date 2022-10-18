@@ -1,0 +1,1336 @@
+[
+  {
+    "description": {
+      "adapter": {
+        "id": "therundown-lp",
+        "version": "2.0.3"
+      },
+      "chainId": 5,
+      "jobId": 57,
+      "jobCase": 0,
+      "jobName": "TR TheRundown LP Get Schedule v2.0.3",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for La Liga market create on 2022-08-20"
+    },
+    "requestData": {
+      "externalJobId": "6b09d37b-284f-4655-bb51-0f494edc111f",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "therundownLpScheduleGamesCreated_v2_0(bytes32,bytes[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "create", "type": "string" },
+        { "name": "sportId", "value": "14", "type": "uint" },
+        { "name": "date", "value": "1660998953", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "therundown-lp",
+        "version": "2.0.3"
+      },
+      "chainId": 5,
+      "jobId": 57,
+      "jobCase": 1,
+      "jobName": "TR TheRundown LP Get Schedule v2.0.3",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for La Liga market resolve on 2022-08-14"
+    },
+    "requestData": {
+      "externalJobId": "6b09d37b-284f-4655-bb51-0f494edc111f",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "therundownLpScheduleGamesResolved_v2_0(bytes32,bytes[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "resolve", "type": "string" },
+        { "name": "sportId", "value": "14", "type": "uint" },
+        { "name": "date", "value": "1660480553", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "crd-network",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 14,
+      "jobCase": 0,
+      "jobName": "CRD Network Get Address Info v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for address 0xdE78D3e8e46D0184841874da003928ecd89533A9"
+    },
+    "requestData": {
+      "externalJobId": "9fc8fdd7-965e-4891-b5ac-000cc3ef65f7",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "crdNetworkAddressInfo(bytes32,bytes22,uint8)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "endpoint", "value": "address-info", "type": "string" },
+        { "name": "address", "value": "0xdE78D3e8e46D0184841874da003928ecd89533A9", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "accuweather",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 15,
+      "jobCase": 0,
+      "jobName": "AW AccuWeather Get Location by Coordinates v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "test for a Colombia city named Lopez by lat, lon"
+    },
+    "requestData": {
+      "externalJobId": "d67df9cb-479e-4b2e-897f-2769d1b0ff8e",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "accuweatherLocation(bytes32,bytes)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "lat", "value": "2.967", "type": "string" },
+        { "name": "lon", "value": "-77.293", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "accuweather",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 16,
+      "jobCase": 0,
+      "jobName": "AW AccuWeather Get Current Conditions by Location ID v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "test for a Colombia city named Lopez by locationKey"
+    },
+    "requestData": {
+      "externalJobId": "0ef6e608-80e2-4cb6-9cb9-9a1cad76f15a",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "accuweatherCurrentConditions(bytes32,bytes)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "locationKey", "value": "107935", "type": "uint" },
+        { "name": "units", "value": "metric", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "accuweather",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 17,
+      "jobCase": 0,
+      "jobName": "AW AccuWeather Get Current Conditions by Coordinates v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "test for a Colombia city named Lopez by lat, lon"
+    },
+    "requestData": {
+      "externalJobId": "7c276986-e23b-4b1c-990d-8659bca7a9d0",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "accuweatherLocationCurrentConditions(bytes32,bytes)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "lat", "value": "2.967", "type": "string" },
+        { "name": "lon", "value": "-77.293", "type": "string" },
+        { "name": "units", "value": "metric", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "wavebridge",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 18,
+      "jobCase": 0,
+      "jobName": "WB WaveBridge Get CMX Index, KIMP Index or KIMP Realtime Index v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "test for latest CMX Index on 2022-01-23"
+    },
+    "requestData": {
+      "externalJobId": "76ec1017-a775-46f9-a064-9100113adaed",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "wavebridgeCmxDaily(bytes32,int256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "endpoint", "value": "cmx-daily", "type": "string" },
+        { "name": "date", "value": "2022-01-23", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "wavebridge",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 18,
+      "jobCase": 1,
+      "jobName": "WB WaveBridge Get CMX Index, KIMP Index or KIMP Realtime Index v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "test for latest KIMP Index on 2022-01-23"
+    },
+    "requestData": {
+      "externalJobId": "76ec1017-a775-46f9-a064-9100113adaed",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "wavebridgeKimpDaily(bytes32,int256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "endpoint", "value": "kimp-daily", "type": "string" },
+        { "name": "date", "value": "2022-01-23", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "wavebridge",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 18,
+      "jobCase": 2,
+      "jobName": "WB WaveBridge Get CMX Index, KIMP Index or KIMP Realtime Index v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "test for latest KIMP realtime"
+    },
+    "requestData": {
+      "externalJobId": "76ec1017-a775-46f9-a064-9100113adaed",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "wavebridgeKimpRealtime(bytes32,int256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "endpoint", "value": "kimp-realtime", "type": "string" },
+        { "name": "date", "value": "2022-01-23", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "tac-index",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 19,
+      "jobCase": 0,
+      "jobName": "TAC Get Freight Price v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "b2134df7-4fec-4a72-b7d6-0c4c43e17b25",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "tacIndexPrice(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "route", "value": "HKG-SIN", "type": "string" },
+        { "name": "currency", "value": "usd", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "heni",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 22,
+      "jobCase": 0,
+      "jobName": "HENI Get TWAP Price of Collection v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "53bf7f0e-5fc4-4a29-a6ce-2ec201504b72",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "heniPrice(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": []
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "enetscores",
+        "version": "2.0.1"
+      },
+      "chainId": 5,
+      "jobId": 23,
+      "jobCase": 0,
+      "jobName": "Enetscores Get Schedule v2.0.1",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Premier League market create on 2022-08-20"
+    },
+    "requestData": {
+      "externalJobId": "d110b5c4-b83d-42dc-a20e-410ac537cd94",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "enetscoresScheduleGamesCreated(bytes32,bytes[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "0", "type": "uint" },
+        { "name": "leagueId", "value": "47", "type": "uint" },
+        { "name": "date", "value": "1660998953", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "enetscores",
+        "version": "2.0.1"
+      },
+      "chainId": 5,
+      "jobId": 23,
+      "jobCase": 1,
+      "jobName": "Enetscores Get Schedule v2.0.1",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Premier League market resolve on 2022-08-14"
+    },
+    "requestData": {
+      "externalJobId": "d110b5c4-b83d-42dc-a20e-410ac537cd94",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "enetscoresScheduleGamesResolved(bytes32,bytes[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "1", "type": "uint" },
+        { "name": "leagueId", "value": "47", "type": "uint" },
+        { "name": "date", "value": "1660480553", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "sportsdataio-linkpool",
+        "version": "2.0.1"
+      },
+      "chainId": 5,
+      "jobId": 24,
+      "jobCase": 0,
+      "jobName": "Sportsdataio LinkPool Get Schedule v1.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for MLB market create on 2022-08-20"
+    },
+    "requestData": {
+      "externalJobId": "bade3601-c5ff-4965-86d6-36c3995f06fe",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "sportsdataLpScheduleGamesCreated(bytes32,bytes32[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "0", "type": "uint" },
+        { "name": "leagueId", "value": "0", "type": "uint" },
+        { "name": "date", "value": "1660998953", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "sportsdataio-linkpool",
+        "version": "2.0.1"
+      },
+      "chainId": 5,
+      "jobId": 24,
+      "jobCase": 1,
+      "jobName": "Sportsdataio LinkPool Get Schedule v1.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for MLB market resolve on 2022-05-18"
+    },
+    "requestData": {
+      "externalJobId": "bade3601-c5ff-4965-86d6-36c3995f06fe",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "sportsdataLpScheduleGamesResolved(bytes32,bytes32[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "1", "type": "uint" },
+        { "name": "leagueId", "value": "0", "type": "uint" },
+        { "name": "date", "value": "1652893649", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "chartmetric",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 25,
+      "jobCase": 0,
+      "jobName": "CM Chartmetric Get Statistics v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "ad875918-c4a9-4489-bbe1-f9e34e7986cf",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "chartmetricStatistics(bytes32,bytes32)",
+      "requestType": 1,
+      "requestParams": [{ "name": "artistId", "value": "439", "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "upshot",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 26,
+      "jobCase": 0,
+      "jobName": "Upshot Get Floor Price v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Azuki's floor price (statistics)"
+    },
+    "requestData": {
+      "externalJobId": "d0ad4d79-22ac-40c5-b6d1-f5d15860ed73",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "upshotStatisticsFloorprice(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "upshot",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 27,
+      "jobCase": 0,
+      "jobName": "Upshot Get Market Cap v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Azuki's market cap (statistics)"
+    },
+    "requestData": {
+      "externalJobId": "90d9063f-14df-49d4-9c72-0eda9a1d120b",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "upshotStatisticsMarketcap(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "upshot",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 28,
+      "jobCase": 0,
+      "jobName": "Upshot Get Statistics v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Azuki's statistics"
+    },
+    "requestData": {
+      "externalJobId": "bc7c98d5-e704-4af9-90b3-0968c9e190a1",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "upshotStatisticsStatistics(bytes32,bytes32)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "upshot",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 29,
+      "jobCase": 0,
+      "jobName": "Upshot Get Timestamp and Floor Price v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Azuki's timestamp and floor price (statistics)"
+    },
+    "requestData": {
+      "externalJobId": "de022b62-8c23-4fb4-a0a9-047c857870fc",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "upshotStatisticsTimestampFloorprice(bytes32,bytes32)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "upshot",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 30,
+      "jobCase": 0,
+      "jobName": "Upshot Get Token Price By Id v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for an Azuki's token price (statistics)"
+    },
+    "requestData": {
+      "externalJobId": "9ca5d974-689a-48e1-acb9-b9898e235d37",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "upshotAssetPrice(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" },
+        { "name": "tokenId", "value": 777, "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "artcentral",
+        "version": "1.0.0"
+      },
+      "chainId": 5,
+      "jobId": 31,
+      "jobCase": 0,
+      "jobName": "Artcentral Get TAMI v1.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests TAMI for Azuki"
+    },
+    "requestData": {
+      "externalJobId": "a93be4de-f92b-4f5c-937c-779acf8000ca",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "artcentralTami(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "nftbank",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 33,
+      "jobCase": 0,
+      "jobName": "NFTBank Get Estimate Price v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for an Azuki's token price in USD"
+    },
+    "requestData": {
+      "externalJobId": "57809ad5-43ae-42bd-ab10-8e5033401fbd",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "nftbankEstimateTokenPrice(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" },
+        { "name": "tokenId", "value": "777", "type": "uint" },
+        { "name": "pricingAsset", "value": "USD", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "nftbank",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 34,
+      "jobCase": 0,
+      "jobName": "NFTBank Get Floor Price v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for a Azuki"
+    },
+    "requestData": {
+      "externalJobId": "2369c17d-8107-4d13-849b-7a64ecaccc84",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "nftbankFloorPricePrice(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "nftbank",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 35,
+      "jobCase": 0,
+      "jobName": "NFTBank Get Timestamp And Floor Price v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for a Azuki"
+    },
+    "requestData": {
+      "externalJobId": "152c8237-bde9-4806-9162-de7815695f42",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "nftbankFloorPriceTimestampFloorprice(bytes32,bytes32)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "assetAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "ap-sports",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 36,
+      "jobCase": 0,
+      "jobName": "AP Associated Press Sports Get Schedule v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for MLB market create on 2022-08-20"
+    },
+    "requestData": {
+      "externalJobId": "210b1434-c056-4d6f-bafb-bd1c4bb24c6e",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "apSportsScheduleGamesCreated(bytes32,bytes[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "0", "type": "uint" },
+        { "name": "sportId", "value": "0", "type": "uint" },
+        { "name": "date", "value": "1660998953", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "ap-sports",
+        "version": "2.0.0"
+      },
+      "chainId": 5,
+      "jobId": 36,
+      "jobCase": 1,
+      "jobName": "AP Associated Press Sports Get Schedule v2.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for MLB market resolve on 2022-05-18"
+    },
+    "requestData": {
+      "externalJobId": "210b1434-c056-4d6f-bafb-bd1c4bb24c6e",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "apSportsScheduleGamesResolved(bytes32,bytes[])",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "market", "value": "1", "type": "uint" },
+        { "name": "sportId", "value": "0", "type": "uint" },
+        { "name": "date", "value": "1652897657", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "anchain",
+        "version": "2.0.1"
+      },
+      "chainId": 5,
+      "jobId": 37,
+      "jobCase": 0,
+      "jobName": "Anchain Get Category v2.0.1",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for an Ethereum whale address"
+    },
+    "requestData": {
+      "externalJobId": "b8b2e4c5-1cc6-4e34-8d9b-2d26a30f9d88",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "anchainCategory(bytes32,string)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "address", "value": "0xa8D24c26E6b272040ef3505D3038575CF5F16B35", "type": "address" },
+        { "name": "chainId", "value": "1", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "nft-analytics-rarify",
+        "version": "1.0.0"
+      },
+      "chainId": 5,
+      "jobId": 38,
+      "jobCase": 0,
+      "jobName": "NFT Analytics Rarify Get Floorprices Single v1.0.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Azuki's floor price"
+    },
+    "requestData": {
+      "externalJobId": "6b02a9b1-1cbd-4666-870c-cfb20145305d",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "nftAnalyticsRarifyFloorpricesGet(bytes32,uint256,uint256)",
+      "requestType": 1,
+      "requestParams": [
+        { "name": "collectionAddress", "value": "0xED5AF388653567Af2F388E6224dC7C4b3241C544", "type": "address" },
+        { "name": "network", "value": "ethereum", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "nft-analytics-nftperp",
+        "version": "1.1.0"
+      },
+      "chainId": 5,
+      "jobId": 99,
+      "jobCase": 0,
+      "jobName": "NFT Analytics NFTPerp Get Twaps Single v1.1.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for BAYC's twap floor price"
+    },
+    "requestData": {
+      "externalJobId": "80171c17-28a4-412d-9bab-61fd8a2d97a2",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "nftAnalyticsNftperpTwapsGet(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [{ "name": "collectionName", "value": "boredapeyachtclub", "type": "string" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "dns-query",
+        "version": "1.6.3"
+      },
+      "chainId": 5,
+      "jobId": 50,
+      "jobCase": 0,
+      "jobName": "DNS Query DNS Proof Check Record v1.6.3 (operator)",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests DNS proof for address (Operator contract)"
+    },
+    "requestData": {
+      "externalJobId": "d2ef141c-c1da-4518-affc-81d8ae54b6e5",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "dnsQueryDnsProofCheckRecord(bytes32,bool)",
+      "requestType": 0,
+      "requestParams": [
+        { "name": "name", "value": "www5.infernos.io", "type": "string" },
+        { "name": "record", "value": "0x4d3407dDfdEb3Feb4e8A167484701ACEd7056826", "type": "address" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "tradermade-own",
+        "version": "1.7.4"
+      },
+      "chainId": 5,
+      "jobId": 66,
+      "jobCase": 0,
+      "jobName": "Tradermade Real Time CFD and Index Price v1.7.4 (operator)",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "852e634b-6d3a-4de8-b3b2-0b54e919abc5",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "tradermadePrice(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "from", "value": "FRA40", "type": "string" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "kyc-ciphertrace",
+        "version": "1.1.0"
+      },
+      "chainId": 5,
+      "jobId": 105,
+      "jobCase": 0,
+      "jobName": "KYC CipherTrace Get Addresses Single v1.1.0 (operator)",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "fad424b9-de57-4aab-afd0-d1de0a8fcb9e",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "kycCiphertraceAddressesGet(bytes32,bool)",
+      "requestType": 0,
+      "requestParams": [
+        { "name": "address", "value": "0xFD8610d20aA15b7B2E3Be39B396a1bC3516c7144", "type": "string" },
+        { "name": "network", "value": "eth", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "twelvedata-own",
+        "version": "1.2.12"
+      },
+      "chainId": 5,
+      "jobId": 60,
+      "jobCase": 0,
+      "jobName": "TwelveData Get Price v1.2.12 (operator)",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "e5dd1891-382d-4089-95b4-1dd3114f2512",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "twelvedataPrice(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "base", "value": "BTC", "type": "string" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "finage-own",
+        "version": "1.5.2"
+      },
+      "chainId": 5,
+      "jobId": 63,
+      "jobCase": 0,
+      "jobName": "Finage Real Time Price v1.5.2",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "31d801e2-db37-4379-8144-ab4f63e3d983",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "finagePrice(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "from", "value": "BTC", "type": "string" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "blocknative",
+        "version": "0.0.2"
+      },
+      "chainId": 5,
+      "jobId": 85,
+      "jobCase": 0,
+      "jobName": "Blocknative Get Gas Price v0.0.2",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "Test gas price for legacy and 90% confidence level"
+    },
+    "requestData": {
+      "externalJobId": "9abb342e-5a1d-41c6-b729-41a3064cf55f",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "blocknativeBlockpricesGetLegacy(bytes32,bytes32)",
+      "requestType": 0,
+      "requestParams": [
+        { "name": "type", "value": "legacy", "type": "string" },
+        { "name": "confidenceLevel", "value": "90", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "blocknative",
+        "version": "0.0.2"
+      },
+      "chainId": 5,
+      "jobId": 85,
+      "jobCase": 1,
+      "jobName": "Blocknative Get Gas Price v0.0.2",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "Test gas price for EIP-1559 and 90% confidence level"
+    },
+    "requestData": {
+      "externalJobId": "9abb342e-5a1d-41c6-b729-41a3064cf55f",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "blocknativeBlockpricesGetEip1559(bytes32,bytes32)",
+      "requestType": 0,
+      "requestParams": [
+        { "name": "type", "value": "eip1559", "type": "string" },
+        { "name": "confidenceLevel", "value": "90", "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "dns-query",
+        "version": "1.6.3"
+      },
+      "chainId": 5,
+      "jobId": 92,
+      "jobCase": 0,
+      "jobName": "DNS Query DNS Proof Check Record v1.6.3 (CL Docs)",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests DNS proof for address"
+    },
+    "requestData": {
+      "externalJobId": "791bd73c-8a13-4985-9f09-b1cb87304f71",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "dnsQueryDnsProofCheckRecord(bytes32,bool)",
+      "requestType": 0,
+      "requestParams": [
+        { "name": "name", "value": "www5.infernos.io", "type": "string" },
+        { "name": "record", "value": "0x4d3407dDfdEb3Feb4e8A167484701ACEd7056826", "type": "string" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "smartzip",
+        "version": "0.0.6"
+      },
+      "chainId": 5,
+      "jobId": 93,
+      "jobCase": 0,
+      "jobName": "Smartzip Get AVM By Property ID v0.0.6",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "6d71f81b-66a9-48c2-8891-73c0968ff0ed",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "smartzipPropertyDetailsPrice(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "property_id", "value": 100000125583, "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "smartzip",
+        "version": "0.0.6"
+      },
+      "chainId": 5,
+      "jobId": 96,
+      "jobCase": 0,
+      "jobName": "Smartzip Get AVM By Property Address v0.0.6",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "925fd891-06c0-4211-999d-a770c2ed761f",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "smartzipPropertyAvmPrice(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "address", "value": "1200 BROADWAY, BURBANK, CA 91504", "type": "string" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "prospectnow",
+        "version": "0.0.4"
+      },
+      "chainId": 5,
+      "jobId": 97,
+      "jobCase": 0,
+      "jobName": "ProspectNow Get Average Price v0.0.4",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": null
+    },
+    "requestData": {
+      "externalJobId": "c9df8b4e-40a4-4927-aa6e-839a3af82ce9",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "prospectnowTerritoryAnalizerAvgPrice(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [
+        { "name": "propertyZip", "value": 80123, "type": "uint" },
+        { "name": "timePeriod", "value": 2, "type": "uint" }
+      ]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "kyc-everest",
+        "version": "1.1.0"
+      },
+      "chainId": 5,
+      "jobId": 127,
+      "jobCase": 0,
+      "jobName": "KYC Everest Get Addresses Single v1.1.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for Not Found"
+    },
+    "requestData": {
+      "externalJobId": "14f84981-6fac-426a-bda2-992cbf47d2cd",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "kycEverestAddressesGet(bytes32,uint8,uint40)",
+      "requestType": 1,
+      "requestParams": [{ "name": "address", "value": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4", "type": "address" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "kyc-everest",
+        "version": "1.1.0"
+      },
+      "chainId": 5,
+      "jobId": 127,
+      "jobCase": 1,
+      "jobName": "KYC Everest Get Addresses Single v1.1.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for is Humand and Unique"
+    },
+    "requestData": {
+      "externalJobId": "14f84981-6fac-426a-bda2-992cbf47d2cd",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "kycEverestAddressesGet(bytes32,uint8,uint40)",
+      "requestType": 1,
+      "requestParams": [{ "name": "address", "value": "0x20768Bb1B766E3E0CbDC4994F243aD400A47313a", "type": "address" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": {
+        "id": "kyc-everest",
+        "version": "1.1.0"
+      },
+      "chainId": 5,
+      "jobId": 127,
+      "jobCase": 2,
+      "jobName": "KYC Everest Get Addresses Single v1.1.0",
+      "nodeId": "linkpool_eth_goerli_delta",
+      "notes": "tests for is KYC User"
+    },
+    "requestData": {
+      "externalJobId": "14f84981-6fac-426a-bda2-992cbf47d2cd",
+      "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+      "payment": "100000000000000000",
+      "callbackAddr": "0xC36729E1531DA5F94CA51E4BD3525a298919c56b",
+      "callbackFunctionName": "kycEverestAddressesGet(bytes32,uint8,uint40)",
+      "requestType": 1,
+      "requestParams": [{ "name": "address", "value": "0x652c3c775A82fEc8D176BEaEB1e259DD5b0c8526", "type": "address" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  }
+]

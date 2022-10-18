@@ -1,0 +1,25 @@
+[
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 1,
+      "jobName": "Test job 1",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243e",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "100000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": []
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  }
+]

@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "linkpool-draft"
+version = "1.0.0"
+description = "Direct Request Automation Framework for Testing"
+authors = ["LinkPool"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+slither-analyzer = "^0.8"

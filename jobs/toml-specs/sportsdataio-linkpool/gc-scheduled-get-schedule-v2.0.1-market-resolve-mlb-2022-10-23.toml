@@ -1,0 +1,30 @@
+type = "cron"
+schemaVersion = 1
+name = "Scheduled - SDIO Sportsdataio LinkPool Get Schedule v2.0.1 - MLB Marker Resolve on 2022-10-23"
+schedule = "@every 1m"
+maxTaskDuration = "0s"
+observationSource = """
+    encode_tx   [
+                 type="ethabiencode"
+                 abi="requestData(bytes32 specId, address oracleAddr, uint96 payment, bytes4 callbackFunctionId, uint8 requestType, bytes calldata buffer)"
+                 data=<{
+                    "specId": "0x6261646533363031633566663439363538366436333663333939356630366665",
+                    "oracleAddr": "0xB9756312523826A566e222a34793E414A81c88E1",
+                    "payment": "100000000000000000",
+                    "callbackFunctionId": "0x16677505",
+                    "requestType": 1,
+                    "buffer": "0x64646174651a63548400686c6561677565496400666d61726b657401"
+                 }>
+                ]
+
+    eth_tx      [
+                 type="ethtx"
+                 from=<["0x0000000000000000000000000000000000000000"]>
+                 to="0xC36729E1531DA5F94CA51E4BD3525a298919c56b"
+                 data="$(encode_tx)"
+                 minConfirmations="1"
+                ]
+
+    encode_tx -> eth_tx
+"""
+

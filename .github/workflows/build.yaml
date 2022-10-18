@@ -1,0 +1,122 @@
+name: Build, lint & test
+
+on:
+  pull_request: ~
+  push:
+    branches:
+      - main
+
+env:
+  NODE_ENV: ci
+
+jobs:
+  packages:
+    name: Verify dependency package archives
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install dependencies & verify checksum
+        run: yarn install --check-cache
+
+  compile:
+    name: Compile contracts and generate TypeChain artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Compile contracts
+        run: yarn compile
+      - name: Generate TypeChain artifacts
+        run: yarn typechain
+
+  lint:
+    name: Run linters
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Lint Solidity and TypeScript
+        run: yarn lint
+
+  test-unit:
+    name: Run unit tests
+    needs: [compile]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Compile contracts
+        run: yarn compile
+      - name: Generate TypeChain artifacts
+        run: yarn typechain
+      - name: Run unit tests
+        run: yarn test:unit
+
+  test-integration-draft:
+    name: Run integration tests (DRAFT)
+    needs: [compile]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Compile contracts
+        run: yarn compile
+      - name: Generate TypeChain artifacts
+        run: yarn typechain
+      - name: Run integration tests
+        run: yarn test:integration:draft
+
+  test-coverage-draft:
+    name: Run solidity-coverage (DRAFT)
+    needs: [compile]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
+      - name: Run solidity-coverage
+        continue-on-error: true
+        run: yarn coverage:draft
+      - name: Upload report to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./coverage/lcov-report/
+          file: ./coverage/coverage-final.json
+          name: codecov-umbrella
+          fail_ci_if_error: false
+          verbose: true

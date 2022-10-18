@@ -1,0 +1,117 @@
+[
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 1,
+      "jobName": "Test job 1 (inactive)",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243a",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "100000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [{ "name": "foo", "value": 1, "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": true
+  },
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 2,
+      "jobName": "Test job 2 (not scheduled - startAt >= now)",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243b",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "200000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [{ "name": "foo", "value": 2, "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 2,
+      "jobName": "Test job 3 (not scheduled - interval 1h)",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243c",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "200000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 1,
+      "requestParams": [{ "name": "foo", "value": 3, "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "3600"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 2,
+      "jobName": "Test job 4",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243d",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "200000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "foo", "value": 4, "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  },
+  {
+    "description": {
+      "adapter": null,
+      "chainId": 31337,
+      "jobId": 2,
+      "jobName": "Test job 5",
+      "nodeId": 1
+    },
+    "requestData": {
+      "externalJobId": "6fcef4f7-6325-4865-9dfe-64b3d8d7243e",
+      "oracleAddr": "0x0000000000000000000000000000000000000001",
+      "payment": "200000000000000000",
+      "callbackAddr": "0x0000000000000000000000000000000000000002",
+      "callbackFunctionName": "fulfillUint256(bytes32,uint256)",
+      "requestType": 0,
+      "requestParams": [{ "name": "foo", "value": 5, "type": "uint" }]
+    },
+    "schedule": {
+      "startAt": "0",
+      "interval": "60"
+    },
+    "inactive": false
+  }
+]
